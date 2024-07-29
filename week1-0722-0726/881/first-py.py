@@ -377,3 +377,9 @@
 
 
 print('Thursday July 30 at 7.15pm: "Inside Out"')
+
+print('Hello World!')
+
+print('Welcome to Python programming')
+
+print('Python is cool')
