@@ -30,6 +30,7 @@
 # # 使用:^10s将字符串居中对齐，并填充至少10个字符宽度。
 # print("Center aligned name: {:^10s}".format(name))
 
+
 # # 对于整数，可以使用类似的格式化方法。
 # # :04d用于整数，保证至少有4位数字，不足部分用0填充。
 # number = 42
@@ -98,3 +99,62 @@
 # getTotalCost = getItemFloorDivision * DISCOUNT_COST + getItemModules * NORMAL_COST
 
 # print('{1} items cost {0}'.format(getTotalCost, items))
+
+
+# lecture quiz
+
+
+# 1
+
+# subject_code = "CSCI111"
+# subject_mark = 80
+# subject_grade = "D"
+
+# result = "Subject result: " \
+#   + subject_code \
+#   + " mark " + str(subject_mark) \
+#   + " grade " + subject_grade 
+
+# print(result)
+
+
+#2
+
+# print('Welcome to Unimovies!')
+# print('Thursday July 30 at 7.15pm: \"Inside Out\"')
+
+
+#3
+
+# first_name = input('Enter first name: ')
+# last_name = input('Enter last name: ')
+# age = input('Enter age: ')
+# gpa_score = input('Enter GPA score: ')
+# print('Name: {0} {1}'.format(first_name, last_name))
+# print('{0} {1} is {2} years old'.format(first_name, last_name, age))
+# print('GPA score: {0:.2f}'.format(float(gpa_score)))
+
+
+#4
+
+# print('Alkali metals: \n')
+
+# print('{0:<15}{1:<10}{2:^25}{3:>15}'.format('Element', 'Symbol', 'Atomic number', 'Atomic weight'))
+# print('{0:<15}{1:<10}{2:^25}{3:>15.4f}'.format('Lithium', 'Li', 3, 6.94))
+# print('{0:<15}{1:<10}{2:^25}{3:>15.4f}'.format('Sodium', 'Na', 11, 22.99))
+# print('{0:<15}{1:<10}{2:^25}{3:>15.4f}'.format('Potassium', 'K', 19, 39.098))
+# print('{0:<15}{1:<10}{2:^25}{3:>15.4f}'.format('Rubidium', 'Rb', 37, 85.468))
+# print('{0:<15}{1:<10}{2:^25}{3:>15.4f}'.format('Caesium', 'Cs', 55, 132.905))
+# print('{0:<15}{1:<10}{2:^25}{3:>15.4f}'.format('Francium', 'Fr', 87, 223))
+
+
+#5
+
+# first_name = input('Enter first name: ')
+# last_name = input('Enter last name: ')
+# age = input('Enter age: ')
+# gpa_score = input('Enter GPA score: ')
+
+# print('{0:<15}{1:>25}'.format('Name:', first_name + ' ' + last_name))
+# print('{0:<15}{1:>25}'.format('Age:', age))
+# print('{0:<15}{1:>25}'.format('GPA score:', gpa_score))
