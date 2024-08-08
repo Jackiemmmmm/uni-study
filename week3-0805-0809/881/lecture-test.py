@@ -22,19 +22,40 @@
 
 # Example 3
 
-GRADE_A = 80
-GRADE_B = 60
-GRADE_C = 40
+# GRADE_A = 80
+# GRADE_B = 60
+# GRADE_C = 40
 
-mark = int(input("Please enter the mark: "))
+# mark = int(input("Please enter the mark: "))
 
-grade = "D"
+# grade = "D"
 
-if mark >= GRADE_A:
-    grade = "A"
-elif mark >= GRADE_B:
-    grade = "B"
-elif mark >= GRADE_C:
-    grade = "C"
+# if mark >= GRADE_A:
+#     grade = "A"
+# elif mark >= GRADE_B:
+#     grade = "B"
+# elif mark >= GRADE_C:
+#     grade = "C"
 
-print("Mark: {0}, Grade: {1}".format(mark, grade))
+# print("Mark: {0}, Grade: {1}".format(mark, grade))
+
+
+# Example 4
+
+firstNumber = int(input("Enter the 1st integer: "))
+secondNumber = int(input("Enter the 2nd integer: "))
+thirdNumber = int(input("Enter the 3rd integer: "))
+
+maxNumber = firstNumber
+
+if secondNumber > maxNumber:
+    maxNumber = secondNumber
+
+if thirdNumber > maxNumber:
+    maxNumber = thirdNumber
+
+print(
+    "Max of {0}, {1}, {2} is {3}".format(
+        firstNumber, secondNumber, thirdNumber, maxNumber
+    )
+)

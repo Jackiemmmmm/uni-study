@@ -1,0 +1,29 @@
+- Q1. What is a Technology Architecture?
+  - The set of computing hardware, network hardware and topology, and system software employed by the organization
+- Q2. What is an Application Architecture?
+  - the set of information systems (the software applications) the organization needs to support its strategic plan
+- Q3. List and briefly describe the five activities of systems analysis.
+  - Gather detailed information—meet with users to understand the business processes and needs
+  - Define requirements—document findings by building models such as use case diagram and class diagram
+  - Prioritize requirements—Decide which requirements (such as use cases) should be done first
+  - Develop user-interface dialogs—work with the users to define exactly how they will use the system and what interactions with the system are required
+  - Evaluate requirements with users—ensure that the requirements are complete, accurate, and prioritized correctly
+- Q4. What are systems requirements?
+  - System requirements are all the activities that a system must perform or support, and the constraints that a system must meet
+  - System requirements include functional requirements and non-functional requirements.
+- Q5. What are functional requirements?
+  - Functoinal requirements are the activities that the system must perform (i.e., the business uses to which the system will be applied).
+  - For example, for a payroll system, the required business uses might include such functions as “generate electronic fund transfers,” “calculate commission amounts,” “calculate payroll taxes,” “maintain employee-dependent information,” and “report tax deductions to the IRS.”
+- Q6. What are non-functional requirements? What is the FURPS acronym?
+  - Non-functional requirements are characteristics of the system other than those activities it must perform or support.
+  - FURPS stands for “functonal requirments,” “usability requirements,” “reliability requirements,” “performance requirement,” and “security requirements.”
+- Q7. What are other non-functional requirements in addition to FURPS?
+  - “Design constraints,” “implementation requirements,” “interface requirements,” “physical requirements,” and “supportability requirements.”
+- Q8. What are stakeholders?
+  - Stakeholders are persons who have an interest in the successful implementation of the system
+- Q9. What are internal and external stakeholders?
+  - Internal stakeholders are persons within the organisation who interact with the system or have a significant interest in its operation or success.
+  - External stakeholders are persons outside the organisation’s control and influence who interact with the system or have a significant interest in its operation or success.
+- Q10. What are operational and executive stakeholders?
+  - Operatoinal stakeholders are persons who regularly interact with a system in the course of their jobs or lives.
+  - Executive stakeholders are persons who don’t interact directly with the system but who either use information produced by the system or have a significant financial or other interest in its operation and success.
