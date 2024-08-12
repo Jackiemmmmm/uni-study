@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise Week 4 - Question 2</title>
+    <script>
+      function changeText(params) {
+        let str = "";
+        if (params === "lion") {
+          str = "The Lion Button is clicked";
+        }
+        if (params === "frog") {
+          str = "The Frog Button is clicked";
+        }
+        document.getElementById("changeInnerHTML").innerHTML = str;
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <button onclick="changeText('lion')">Lion</button>
+      <button onclick="changeText('frog')">Frog</button>
+      <p id="changeInnerHTML"></p>
+    </div>
+  </body>
+</html>

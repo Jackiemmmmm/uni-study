@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise Week 4 - Question 4</title>
+    <script>
+      function sendMsg(params) {
+        const getId = document.getElementById("message");
+        getId.innerHTML = params;
+        if (params === "Roar") {
+          getId.style.color = "orange";
+        }
+        if (params === "Ribbit") {
+          getId.style.color = "green";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div style="padding-bottom: 2rem">
+      <img src="./lion.jpeg" alt="Lion" onclick="sendMsg('Roar')" />
+      <img src="./frog.jpeg" alt="Frog" onclick="sendMsg('Ribbit')" />
+    </div>
+    <p id="message"></p>
+  </body>
+</html>

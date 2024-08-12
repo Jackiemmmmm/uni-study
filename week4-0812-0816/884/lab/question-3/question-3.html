@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise Week 4 - Question 3</title>
+    <script>
+      function changeImgSrc(params) {
+        let str = "";
+        if (params === "lion") {
+          str = "./lion.jpeg";
+        }
+        if (params === "frog") {
+          str = "./frog.jpeg";
+        }
+        document.getElementById("changeSrc").src = str;
+      }
+    </script>
+  </head>
+  <body>
+    <div style="padding-bottom: 2rem;">
+      <button onclick="changeImgSrc('lion')">Lion</button>
+      <button onclick="changeImgSrc('frog')">Frog</button>
+    </div>
+    <img id="changeSrc" src="" alt="Image not found" / >
+  </body>
+</html>

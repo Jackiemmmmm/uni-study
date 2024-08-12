@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise Week 4 - Question 5</title>
+    <script>
+      function clickImg(params) {
+        if (params === "lion") {
+          const getId = document.getElementById("lionClick");
+          getId.innerHTML = Number(getId.innerHTML) + 1;
+        }
+        if (params === "frog") {
+          const getId = document.getElementById("frogClick");
+          getId.innerHTML = Number(getId.innerHTML) + 1;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div style="padding-bottom: 2rem">
+      <img src="./lion.jpeg" alt="Lion" onclick="clickImg('lion')" />
+      <img src="./frog.jpeg" alt="Frog" onclick="clickImg('frog')" />
+    </div>
+    <p>Number of lion clicks: <span id="lionClick">0</span></p>
+    <p>Number of frog clicks: <span id="frogClick">0</span></p>
+  </body>
+</html>

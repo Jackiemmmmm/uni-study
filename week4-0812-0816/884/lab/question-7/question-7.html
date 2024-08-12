@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise Week 4 - Question 7</title>
+    <script>
+      // document.addEventListener("keypress", function (event) {
+      //   if (event.key !== "Enter") {
+      //     return;
+      //   }
+      //   const getInputValue = document.getElementById("enterCommand").value;
+      //   const getImgId = document.getElementById("img");
+      //   if (getInputValue == "display lion") {
+      //     getImgId.src = "./lion.jpeg";
+      //     getImgId.style.display = "block";
+      //   } else if (getInputValue == "display frog") {
+      //     getImgId.src = "./frog.jpeg";
+      //     getImgId.style.display = "block";
+      //   } else {
+      //     getImgId.src = "";
+      //     getImgId.style.display = "none";
+      //     setTimeout(function (params) {
+      //       alert("Invalid command");
+      //     }, 100);
+      //   }
+      // });
+      function validateForm(event) {
+        const getInputValue = document.getElementById("enterCommand").value;
+        const getImgId = document.getElementById("img");
+        if (getInputValue == "display lion") {
+          getImgId.src = "./lion.jpeg";
+          getImgId.style.display = "block";
+        } else if (getInputValue == "display frog") {
+          getImgId.src = "./frog.jpeg";
+          getImgId.style.display = "block";
+        } else {
+          getImgId.src = "";
+          getImgId.style.display = "none";
+          setTimeout(function (params) {
+            alert("Invalid command");
+          }, 100);
+        }
+        return false;
+      }
+    </script>
+  </head>
+  <body>
+    <!-- <label for="enterCommand">Enter Command: </label>
+    <input name="enterCommand" id="enterCommand" /> -->
+    <form onsubmit="return validateForm()">
+      <label for="enterCommand">Enter Command: </label>
+      <input name="enterCommand" id="enterCommand" />
+    </form>
+    <img id="img" alt="" style="display: none" />
+  </body>
+</html>

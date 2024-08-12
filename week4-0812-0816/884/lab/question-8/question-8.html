@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise Week 4 - Question 8</title>
+    <script>
+      function switchImg() {
+        const list = document.querySelectorAll("img");
+        const getFirstSrc = list[0].src;
+        const getSecondSrc = list[1].src;
+        list[0].src = getSecondSrc;
+        list[1].src = getFirstSrc;
+      }
+    </script>
+  </head>
+  <body>
+    <img onmouseover="switchImg()" src="./lion.jpeg" />
+    <img onmouseover="switchImg()" src="./frog.jpeg" />
+  </body>
+</html>
