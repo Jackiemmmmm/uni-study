@@ -1,0 +1,27 @@
+- Q1. List and briefly describe the six information gathering techniques.
+  - Interview users and stakeholders—the most effective for information gathering, but the most expensive
+  - Distribute questionnaires—good for finding overview or summary information from many people
+  - Review current system documentation—good for understanding current processes
+  - Observe current business processes—also good for understanding the user's processes and requirements
+  - Research vendor solutions—good for generating new ideas and learning what already has been done
+  - Collect user comments—good for finding out about problems with current processes
+- Q2. Describe the steps in preparing for, conducting, and following up an interview session.
+  - Prepare for an interview by establishing the objective, determining the users and project team members, write questions, review preliminary materials, set up the interview time and location and tell everybody.
+  - Conduct the interview by asking questions, looking for exception conditions and probing for good details.
+  - Also take good notes, and document all the follow-up items.
+  - Follow-up the interview by reviewing everybody's notes, building the models as necessary, document open issues, then follow-up with them.
+- Q3. What are the benefits of doing vendor research during information-gathering activities?
+  - It can inform the current team and users of new ideas and possibly more effective methods
+  - The team can possibly find out about more current state-of-the-art solutions that vendors have created.
+  - It may even be cheaper, faster, and more effective to purchase a solution instead of building.
+- Q4. What are three types of models?
+  - Textual models, graphical models, and mathematical models
+- Q5. Explain why the Unified Modeling Language (UML) is important to use as a standard for creating information systems models.
+  - Prior to UML there was no standard so diagrams would vary between companies and even within a company.
+  - This caused confusion and also discrepancies or gaps in the requirements definition.
+  - There also was no standard that was taught in university level courses and textbooks.
+  - This caused problems in both student preparation and in the ability of students to adapt to different company methods and models.
+- Q6. What is the purpose of an activity diagram?
+  - One purpose of an activity diagram is to document current user workflows.
+  - Activity diagrams are often called workflow diagrams.
+  - They can be used to document a user procedure as she/he interacts with the computer system.
