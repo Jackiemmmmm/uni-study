@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week5 - Question 1</title>
+    <style>
+      .wrap div {
+        vertical-align: top;
+      }
+      .wrap div > label {
+        width: 125px;
+        display: inline-block;
+      }
+      .test {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Whosville library book search</h1>
+      <form action="http://library.whosville/bsearch" method="get">
+        <div>
+          <label for="author">Author name: </label>
+          <input name="author" type="text" />
+        </div>
+        <div>
+          <label for="year">Publication year: </label>
+          <input name="year" type="text" />
+        </div>
+        <div>
+          <label>Subject: </label>
+          <div class="test">
+            <div>
+              <input type="checkbox" name="sub" value="mth" />Mathematics
+            </div>
+            <div><input type="checkbox" name="sub" value="cs" />Computer Science</div>
+            <div><input type="checkbox" name="sub" value="bio" />Biology</div>
+            <div><input type="checkbox" name="sub" value="phy" />Physics</div>
+            <div>
+              <input type="checkbox" name="sub" value="chem" />Chemistry
+            </div>
+            <div>
+              <button type="submit">Search</button>
+              <button type="reset">Clear</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
