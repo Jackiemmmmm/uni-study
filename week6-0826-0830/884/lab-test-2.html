@@ -11,18 +11,20 @@
         const getSecond = Number(document.getElementById("secondValue").value);
         const getTotal = Number(document.getElementById("totalValue").value);
         const getText = document.getElementById("showText");
-        const correctText = "Correct!";
-        const incorrectText = "Incorrect, please try again.";
-        const isPlusCorrect =
-          getSymbol === "+" && getFirst + getSecond === getTotal;
-        const isMinusCorrect =
-          getSymbol === "-" && getFirst - getSecond === getTotal;
-        const isMulCorrect =
-          getSymbol === "*" && getFirst * getSecond === getTotal;
-        if (isPlusCorrect || isMinusCorrect || isMulCorrect) {
-          getText.innerHTML = correctText;
+
+        let calculateValue = null;
+        if (getSymbol === "+") {
+          calculateValue = getFirst + getSecond;
+        } else if (getSymbol === "-") {
+          calculateValue = getFirst - getSecond;
+        } else if (getSymbol === "*") {
+          calculateValue = getFirst * getSecond;
+        }
+
+        if (calculateValue === getTotal) {
+          getText.innerHTML = "Correct!";
         } else {
-          getText.innerHTML = incorrectText;
+          getText.innerHTML = "Incorrect, please try again.";
         }
       }
     </script>
