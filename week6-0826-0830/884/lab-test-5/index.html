@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week6 - Question 4</title>
+    <script>
+      const TIME_GAP = 1200;
+      let holdInterval = null;
+      function intervalAnimate(callback) {
+        if (callback) {
+          if (holdInterval) {
+            clearInterval(holdInterval);
+            holdInterval = null;
+          }
+          holdInterval = setInterval(callback, TIME_GAP);
+        } else {
+          clearInterval(holdInterval);
+          holdInterval = null;
+        }
+      }
+
+      function counter() {
+        intervalAnimate(() => {
+          const list = [
+            "./IMG_5766.JPG",
+            "./IMG_5767.JPG",
+            "./IMG_5768.JPG",
+            "./IMG_5769.JPG",
+            "./IMG_5770.JPG",
+            "./IMG_5771.JPG",
+          ];
+          const index = Math.floor(Math.random() * list.length);
+          document.getElementById("showImg").src = list[index];
+        });
+      }
+      function stopCounter() {
+        intervalAnimate();
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="counter()">Start Slideshow</button>
+    <button onclick="stopCounter()">Stop Slideshow</button>
+    <br />
+    <img width="300" id="showImg" />
+  </body>
+</html>

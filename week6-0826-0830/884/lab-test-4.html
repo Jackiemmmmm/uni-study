@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week6 - Question 4</title>
+    <script>
+      let i = 0;
+      const TIME_GAP = 1000;
+
+      let holdInterval = null;
+      function intervalAnimate(callback) {
+        if (callback) {
+          if (holdInterval) {
+            clearInterval(holdInterval);
+            holdInterval = null;
+          }
+          holdInterval = setInterval(callback, TIME_GAP);
+        } else {
+          clearInterval(holdInterval);
+          holdInterval = null;
+        }
+      }
+
+      function counter() {
+        intervalAnimate(() => {
+          i += 1;
+          document.getElementById("count").innerHTML = i;
+        });
+      }
+      function stopCounter() {
+        intervalAnimate();
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="counter()">Start counter animation</button>
+    <button onclick="stopCounter()">Stop counter animation</button>
+    <p id="count">0</p>
+  </body>
+</html>

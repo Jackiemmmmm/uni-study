@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week6 - Question 1</title>
+    <script>
+      function showSelection(params) {
+        const sub1 = document.getElementById("sub1").value;
+        const sub2 = document.getElementById("sub2").value;
+        const sub3 = document.getElementById("sub3").value;
+        const sub4 = document.getElementById("sub4").value;
+        document.getElementById(
+          "showBlock"
+        ).innerHTML = `You have selected ${sub1}, ${sub2}, ${sub3} and ${sub4}`;
+      }
+    </script>
+  </head>
+  <body>
+    <p>Please select 4 subjects.</p>
+    <p>Subject 1: <input type="text" id="sub1" /></p>
+    <p>Subject 2: <input type="text" id="sub2" /></p>
+    <p>Subject 3: <input type="text" id="sub3" /></p>
+    <p>Subject 4: <input type="text" id="sub4" /></p>
+    <button onclick="showSelection()">Show selection</button>
+    <p id="showBlock"></p>
+  </body>
+</html>

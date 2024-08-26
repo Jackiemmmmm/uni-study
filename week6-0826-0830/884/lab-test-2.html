@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week6 - Question 2</title>
+    <script>
+      function calculate() {
+        const getSymbol = document.getElementById("calcSymbol").value;
+        const getFirst = Number(document.getElementById("firstValue").value);
+        const getSecond = Number(document.getElementById("secondValue").value);
+        const getTotal = Number(document.getElementById("totalValue").value);
+        const getText = document.getElementById("showText");
+        const correctText = "Correct!";
+        const incorrectText = "Incorrect, please try again.";
+        const isPlusCorrect =
+          getSymbol === "+" && getFirst + getSecond === getTotal;
+        const isMinusCorrect =
+          getSymbol === "-" && getFirst - getSecond === getTotal;
+        const isMulCorrect =
+          getSymbol === "*" && getFirst * getSecond === getTotal;
+        if (isPlusCorrect || isMinusCorrect || isMulCorrect) {
+          getText.innerHTML = correctText;
+        } else {
+          getText.innerHTML = incorrectText;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <input id="firstValue" type="number" />
+      <select id="calcSymbol">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">x</option>
+      </select>
+      <input id="secondValue" type="number" />
+      =
+      <input id="totalValue" type="number" />
+      <button onclick="calculate()">Check</button>
+      <span id="showText"></span>
+    </div>
+  </body>
+</html>
