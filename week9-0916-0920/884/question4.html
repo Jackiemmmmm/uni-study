@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 3</title>
+    <script>
+      const getInputValue = (name) =>
+        document.querySelectorAll(`input[name="${name}"`)[0];
+      const onSubmit = (event) => {
+        const subjectCode = getInputValue("subjectCode");
+        const subjectTitle = getInputValue("subjectTitle");
+        const subjectCreditPoint = getInputValue("subjectCreditPoint");
+        const coreSubject = getInputValue("coreSubject");
+        const readJSON = document.getElementsByName("readJSON")[0].value;
+        const parsedJSON = JSON.parse(readJSON);
+        subjectCode.value = parsedJSON.subjectCode;
+        subjectTitle.value = parsedJSON.subjectTitle;
+        subjectCreditPoint.value = parsedJSON.subjectCreditPoint;
+        coreSubject.checked = parsedJSON.coreSubject;
+        return false;
+      };
+    </script>
+  </head>
+  <body>
+    <form onsubmit="return onSubmit(event)" action="return false">
+      <textarea name="readJSON" rows="10" cols="50"></textarea>
+      <div>
+        <button type="submit">Read JSON</button>
+      </div>
+      <div>
+        Subject code:
+        <input name="subjectCode" type="text" />
+      </div>
+      <div>
+        Subject title:
+        <input name="subjectTitle" type="text" />
+      </div>
+      <div>
+        Subject credit point:
+        <input name="subjectCreditPoint" type="text" />
+      </div>
+      <div>Core subject: <input name="coreSubject" type="checkbox" /></div>
+    </form>
+  </body>
+</html>

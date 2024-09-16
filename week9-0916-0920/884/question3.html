@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 3</title>
+    <script>
+      const getInputValue = (name) =>
+        document.querySelectorAll(`input[name="${name}"`)[0];
+      const onSubmit = (event) => {
+        const subjectCode = getInputValue("subjectCode").value;
+        const subjectTitle = getInputValue("subjectTitle").value;
+        const subjectCreditPoint = getInputValue("subjectCreditPoint").value;
+        const coreSubject = getInputValue("coreSubject").checked;
+        const generateJSON = document.getElementsByName("generateJSON")[0];
+        generateJSON.value = JSON.stringify(
+          {
+            subjectCode,
+            subjectTitle,
+            subjectCreditPoint,
+            coreSubject,
+          },
+          null,
+          2
+        );
+        return false;
+      };
+    </script>
+  </head>
+  <body>
+    <form onsubmit="return onSubmit(event)" action="return false">
+      <div>
+        Subject code:
+        <input name="subjectCode" type="text" />
+      </div>
+      <div>
+        Subject title:
+        <input name="subjectTitle" type="text" />
+      </div>
+      <div>
+        Subject credit point:
+        <input name="subjectCreditPoint" type="text" />
+      </div>
+      <div>Core subject: <input name="coreSubject" type="checkbox" /></div>
+      <div>
+        <button type="submit">View JSON</button>
+      </div>
+      <textarea name="generateJSON" rows="10" cols="50"></textarea>
+    </form>
+  </body>
+</html>
